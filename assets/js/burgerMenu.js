@@ -1,6 +1,11 @@
 const burger = document.querySelector('.humburger-menu')
-const menuElem = document.querySelector('.menu')
 const menuList = document.querySelector('.menu-list')
+const menuElem = document.querySelector('.menu')
+
+burger.addEventListener('click', () => {
+  menuElem.classList.toggle('menu-active')
+  burger.classList.toggle('humburger-menu-active')
+})
 
 menuList.addEventListener('click', event => {
   if (event) {
@@ -9,9 +14,4 @@ menuList.addEventListener('click', event => {
   }
 })
 
-const toggleMenu = () => {
-  menuElem.classList.toggle('menu-active')
-  burger.classList.toggle('humburger-menu-active')
-}
 
-burger.addEventListener('click', () => toggleMenu())

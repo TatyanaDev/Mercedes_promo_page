@@ -10,13 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="js/accordion.js" defer></script>
-    <script src="js/smoothScroll.js" defer></script>
-    <script src="js/tabs.js" defer></script>
-    <script src="js/modal.js" defer></script>
-    <script src="js/burger.js" defer></script>
-    <script src="js/sendForm.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
@@ -26,7 +20,11 @@
         <div class="header-wrapper">
           <div class="header-main">
             <a href="#main" class="logo header__logo">
-              <img src="img/logo.svg" alt="Logo: A 200" class="logo__img" />
+              <img
+                src="./assets/icons/logo.svg"
+                alt="Logo: A 200"
+                class="logo__img"
+              />
             </a>
             <!-- /.logo -->
             <nav class="menu">
@@ -80,13 +78,17 @@
             </a>
             <a
               href="#design"
-              class="main__scroll"
+              class="menu-list__link main__scroll"
               aria-label="к следующему экрану"
             ></a>
           </div>
           <!-- /.offer -->
           <div class="main-img">
-            <a href="https://www.youtube.com/watch?v=w7doL2EpxX0" class="play">
+            <a
+              href="https://www.youtube.com/watch?v=w7doL2EpxX0"
+              class="play"
+              target="_blank"
+            >
               Смотреть видео
             </a>
           </div>
@@ -102,13 +104,13 @@
         <div class="design-wrapper">
           <div class="design-block">
             <img
-              src="img/car/image-5.png"
+              src="./assets/images/cars/bodyDesign.png"
               alt="A 200"
               class="feature__img design-block__img"
               data-tabs-field="interior"
             />
             <img
-              src="img/car/image-4.png"
+              src="./assets/images/cars/interiorDesign.png"
               alt="A 200"
               class="feature__img design-block__img hidden"
               data-tabs-field="body"
@@ -177,44 +179,44 @@
           <ul>
             <li class="design-images" data-tabs-field="interior">
               <img
-                src="img/design/interior01.jpg"
+                src="./assets/images/design/firstInterior.jpg"
                 alt="A 200"
                 class="design__img"
               />
               <img
-                src="img/design/interior02.jpg"
+                src="./assets/images/design/secondInterior.jpg"
                 alt="A 200"
                 class="design__img"
               />
               <img
-                src="img/design/interior03.jpg"
+                src="./assets/images/design/thirdInterior.jpg"
                 alt="A 200"
                 class="design__img"
               />
               <img
-                src="img/design/interior04.jpg"
+                src="./assets/images/design/fourthInterior.jpg"
                 alt="A 200"
                 class="design__img"
               />
             </li>
             <li class="design-images hidden" data-tabs-field="body">
               <img
-                src="img/design/body01.jpg"
+                src="./assets/images/design/firstBody.jpg"
                 alt="A 200"
                 class="design__img"
               />
               <img
-                src="img/design/body02.jpg"
+                src="./assets/images/design/secondBody.jpg"
                 alt="A 200"
                 class="design__img"
               />
               <img
-                src="img/design/body03.jpg"
+                src="./assets/images/design/thirdBody.jpg"
                 alt="A 200"
                 class="design__img"
               />
               <img
-                src="img/design/body04.jpg"
+                src="./assets/images/design/fourthBody.jpg"
                 alt="A 200"
                 class="design__img"
               />
@@ -491,5 +493,11 @@
       </div>
     </div>
     <!-- modal (end) -->
+    <script src="./assets/js/accordionMenu.js" defer></script>
+    <script src="./assets/js/smoothScroll.js" defer></script>
+    <script src="./assets/js/tabs.js" defer></script>
+    <script src="./assets/js/modalWindow.js" defer></script>
+    <script src="./assets/js/burgerMenu.js" defer></script>
+    <script src="./assets/js/submitForm.js" defer></script>
   </body>
 </html>

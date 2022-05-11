@@ -3,15 +3,13 @@ const tabsContentElems = document.querySelectorAll('[data-tabs-field]')
 const tabsContentHeaders = document.querySelectorAll('.design__title')
 const descriptions = document.querySelector('.design__descr')
 
-for (let btn of tabsHandlerElems) {
-  btn.addEventListener('click', () => {
-    tabsHandlerElems.forEach(item =>
-      item.classList.remove('design-list__item_active')
-    )
-    btn.classList.add('design-list__item_active')
+for (let button of tabsHandlerElems) {
+  button.addEventListener('click', () => {
+    tabsHandlerElems.forEach(item => item.classList.remove('design-list__item_active'))
+    button.classList.add('design-list__item_active')
 
     tabsContentElems.forEach(content => {
-      if (content.dataset.tabsField === btn.dataset.tabsHandler) {
+      if (content.dataset.tabsField === button.dataset.tabsHandler) {
         content.classList.remove('hidden')
       } else {
         content.classList.add('hidden')
